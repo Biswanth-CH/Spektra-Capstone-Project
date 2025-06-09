@@ -1,0 +1,106 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>User Requests</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li (click)="navigateTo('admin-dashboard')">Dashboard</li>
+        <li (click)="navigateTo('admin-users')">Users</li>
+        <li (click)="navigateTo('admin-analytics')">Analytics</li>
+        <li class="active" (click)="navigateTo('admin-requests')">Requests</li>
+        <li (click)="navigateTo('admin-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="dashboard-container">
+    <h2>User Requests</h2>
+    <p>Monitor and manage service requests from users.</p>
+
+    <!-- Filters -->
+
+    <div class="filters" style="margin-bottom: 20px">
+      <label>
+        User ID:
+        <input
+          type="text"
+          [(ngModel)]="selectedUserId"
+          (input)="applyFilters()"
+          placeholder="Filter by User ID"
+        />
+      </label>
+
+      <label>
+        Status:
+        <select [(ngModel)]="selectedStatus" (change)="applyFilters()">
+          <option value="">All</option>
+          <option value="Approved">Approved</option>
+          <option value="Rejected">Rejected</option>
+          <option value="Pending">Pending</option>
+        </select>
+      </label>
+
+      <label style="margin-left: 20px">
+        Request Type:
+        <select [(ngModel)]="selectedRequestType" (change)="applyFilters()">
+          <option value="">All</option>
+          <option value="LegalInquiries">LegalInquiry</option>
+          <option value="PassportRenewal">PassportRenewal</option>
+          <option value="Taxfiling">TaxFiling</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Requests Table -->
+    <div class="user-table">
+      <div class="user-row header">
+        <span>Request ID</span>
+        <span>User ID</span>
+        <!-- Added User ID header -->
+        <span>Request Type</span>
+        <span>Service Date</span>
+        <span>Status</span>
+        <span>Actions</span>
+      </div>
+
+      @for (request of filteredRequests; track request.userRequestId) {
+      <div class="user-row">
+        <span>{{ request.userRequestId }}</span>
+        <span>{{ request.userId }}</span>
+        <!-- Added User ID data -->
+        <span>{{ request.requestType }}</span>
+        <span>{{ request.createdAt | date }}</span>
+        <span>
+          <span
+            class="badge"
+            [class.approved]="request.status === 'Approved'"
+            [class.pending]="request.status === 'Pending'"
+            [class.rejected]="request.status === 'Rejected'"
+          >
+            {{ request.status }}
+          </span>
+        </span>
+        <span class="action-buttons">
+          <button class="action-btn" (click)="approveRequest(request)">
+            Approve
+          </button>
+          <button class="action-btn delete" (click)="rejectRequest(request)">
+            Reject
+          </button>
+        </span>
+      </div>
+      } @if (filteredRequests.length === 0) {
+      <div class="user-row">
+        <span colspan="6">No requests found.</span>
+        <!-- Updated colspan to 6 -->
+      </div>
+      }
+    </div>
+  </div>
+</div>

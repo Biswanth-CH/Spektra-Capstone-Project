@@ -1,0 +1,67 @@
+<app-navbar></app-navbar>
+
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Profile</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li (click)="navigateTo('user-dashboard')">Dashboard</li>
+        <li (click)="navigateTo('passport-renewal')">Passport Renewal</li>
+        <li (click)="navigateTo('tax-filing')">Tax Filing</li>
+        <li (click)="navigateTo('legal-inquiry')">Legal Inquiry</li>
+        <li (click)="navigateTo('ai-assistant')">AI Assistant</li>
+        <li (click)="navigateTo('user-requests')">Requests</li>
+        <li (click)="navigateTo('user-reports')">Reports</li>
+        <li class="active" (click)="navigateTo('user-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="dashboard-container">
+    <h2>User Profile</h2>
+    <p>View and manage your profile details and security settings.</p>
+
+    <!-- Profile Info Card -->
+    <div class="profile-card">
+      <div class="profile-left">
+        <img
+          [src]="
+            profile.profilePic
+              ? profile.profilePic
+              : 'https://via.placeholder.com/100'
+          "
+          alt="'User' avatar"
+          class="profile-img"
+        />
+        <h3>{{ profile.fullName }}</h3>
+        <p>{{ profile.role }}</p>
+        <p>{{ profile.department }}</p>
+      </div>
+
+      <div class="profile-right">
+        <div class="profile-section">
+          <h4>Profile Details</h4>
+          <div class="form-row">
+            <label>Full Name</label>
+            <input type="text" [value]="profile.fullName" disabled />
+          </div>
+          <div class="form-row">
+            <label>Email</label>
+            <input type="email" [value]="profile.email" disabled />
+          </div>
+          <div class="form-row">
+            <label>Phone</label>
+            <input type="text" [value]="profile.phone" disabled />
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </div>
+</div>

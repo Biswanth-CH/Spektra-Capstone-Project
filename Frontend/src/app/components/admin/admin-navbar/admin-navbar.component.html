@@ -1,0 +1,61 @@
+<div class="navbar">
+  <div class="logo">Spektra Services - ADMIN</div>
+
+  <!-- Desktop Navigation -->
+  <div class="desktop-options">
+    <span
+      (click)="navigateTo('/admin-dashboard')"
+      [class.active]="activeTab === 'dashboard'"
+    >
+      <i class="icon dashboard-icon"></i> Dashboard
+    </span>
+    <span
+      (click)="navigateTo('/admin-requests')"
+      [class.active]="activeTab === 'requests'"
+    >
+      <i class="icon requests-icon"></i> Service Requests
+    </span>
+    <span
+      (click)="navigateTo('/admin-analytics')"
+      [class.active]="activeTab === 'analytics'"
+    >
+      <i class="icon analytics-icon"></i> Analytics
+    </span>
+    <span
+      (click)="navigateTo('/admin-users')"
+      [class.active]="activeTab === 'users'"
+    >
+      <i class="icon users-icon"></i> User Management
+    </span>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger-menu" [class.open]="menuOpen" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div class="dropdown-menu" [class.open]="menuOpen">
+    <ul>
+      <li (click)="navigateTo('/admin-dashboard')">
+        <i class="icon dashboard-icon"></i> Dashboard
+      </li>
+      <li (click)="navigateTo('/admin-requests')">
+        <i class="icon requests-icon"></i> Service Requests
+      </li>
+      <li (click)="navigateTo('/admin-analytics')">
+        <i class="icon analytics-icon"></i> Analytics
+      </li>
+      <li (click)="navigateTo('/admin-users')">
+        <i class="icon users-icon"></i> User Management
+      </li>
+      <li class="divider"></li>
+      <li (click)="navigateTo('/admin-profile')">
+        <i class="icon profile-icon"></i> Admin Profile
+      </li>
+      <li (click)="logout()"><i class="icon logout-icon"></i> Logout</li>
+    </ul>
+  </div>
+</div>

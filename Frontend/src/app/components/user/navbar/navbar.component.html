@@ -1,0 +1,83 @@
+<div class="navbar">
+  <div class="logo">
+    <span class="logo-text">Spektra Services</span>
+  </div>
+
+  <!-- Desktop Navigation -->
+  <div class="desktop-options">
+    <span
+      (click)="navigateTo('/passport-renewal')"
+      [class.active]="activeTab === 'passport-renewal'"
+    >
+      <i class="icon passport-icon"></i> Passport
+    </span>
+    <span
+      (click)="navigateTo('/tax-filing')"
+      [class.active]="activeTab === 'tax-filing'"
+    >
+      <i class="icon tax-icon"></i> Tax Filing
+    </span>
+    <span
+      (click)="navigateTo('/legal-inquiry')"
+      [class.active]="activeTab === 'legal-inquiry'"
+    >
+      <i class="icon legal-icon"></i> Legal
+    </span>
+    <span
+      (click)="navigateTo('/ai-assistant')"
+      [class.active]="activeTab === 'ai-assistant'"
+      class="ai-tab"
+    >
+      <i class="icon ai-icon"></i> AI Assistant
+    </span>
+    <span
+      (click)="navigateTo('/user-requests')"
+      [class.active]="activeTab === 'my-requests'"
+    >
+      <i class="icon requests-icon"></i> My Requests
+    </span>
+    <span
+      (click)="navigateTo('/user-reports')"
+      [class.active]="activeTab === 'user-reports'"
+    >
+      <i class="icon requests-icon"></i> Reports
+    </span>
+  </div>
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger-menu" [class.open]="menuOpen" (click)="toggleMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div class="dropdown-menu" [class.open]="menuOpen">
+    <ul class="menu-tabs">
+      <li (click)="navigateTo('/passport-renewal')">
+        <i class="icon passport-icon"></i> Passport
+      </li>
+      <li (click)="navigateTo('/tax-filing')">
+        <i class="icon tax-icon"></i> Tax Filing
+      </li>
+      <li (click)="navigateTo('/legal-inquiry')">
+        <i class="icon legal-icon"></i> Legal
+      </li>
+      <li (click)="navigateTo('/ai-assistant')">
+        <i class="icon ai-icon"></i> AI Assistant
+      </li>
+      <li (click)="navigateTo('/user-requests')">
+        <i class="icon requests-icon"></i> My Requests
+      </li>
+    </ul>
+
+    <li class="divider"></li>
+
+    <ul class="menu-profile">
+      <li (click)="navigateTo('/user-profile')">
+        <i class="icon user-profile-icon"></i> Profile
+      </li>
+      <li (click)="logout()"><i class="icon logout-icon"></i> Logout</li>
+    </ul>
+  </div>
+</div>

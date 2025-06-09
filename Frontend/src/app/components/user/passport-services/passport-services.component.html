@@ -1,0 +1,225 @@
+<app-navbar></app-navbar>
+
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Passport Renewal</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li (click)="navigateTo('user-dashboard')">Dashboard</li>
+        <li class="active" (click)="navigateTo('passport-renewal')">
+          Passport Renewal
+        </li>
+        <li (click)="navigateTo('tax-filing')">Tax Filing</li>
+        <li (click)="navigateTo('legal-inquiry')">Legal Inquiry</li>
+        <li (click)="navigateTo('ai-assistant')">AI Assistant</li>
+        <li (click)="navigateTo('user-requests')">Requests</li>
+        <li (click)="navigateTo('user-reports')">Reports</li>
+        <li (click)="navigateTo('user-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="dashboard-container">
+    <h2>Passport Renewal Application</h2>
+    <p>Please follow the steps to complete your renewal process.</p>
+
+    <!-- Stepper UI -->
+    <div class="stepper">
+      <div class="step" [class.active]="currentStep === 1">
+        1 <span>Personal Info</span>
+      </div>
+      <div class="step" [class.active]="currentStep === 2">
+        2 <span>Upload Documents</span>
+      </div>
+      <div class="step" [class.active]="currentStep === 3">
+        3 <span>Review & Payment</span>
+      </div>
+      <div class="step" [class.active]="currentStep === 4">
+        4 <span>Confirmation</span>
+      </div>
+    </div>
+
+    <!-- Step 1: Personal Info -->
+    @if (currentStep === 1) {
+      <form #form1="ngForm" (ngSubmit)="nextStep()" novalidate>
+        <div class="passport-form-card">
+          <h3>Step 1: Enter Personal Information</h3>
+
+          <div class="form-group">
+            <label>Full Name</label>
+            <input
+              type="text"
+              [(ngModel)]="formData.fullName"
+              name="fullName"
+              required
+              placeholder="Enter your Name"
+            />
+            @if (validationErrors.fullName) {
+              <small class="error">{{ validationErrors.fullName }}</small>
+            }
+          </div>
+
+          <div class="form-group">
+            <label>Date of Birth</label>
+            <input
+              type="date"
+              [(ngModel)]="formData.dob"
+              name="dob"
+              required
+            />
+            @if (validationErrors.dob) {
+              <small class="error">{{ validationErrors.dob }}</small>
+            }
+          </div>
+
+          <div class="form-group">
+            <label>Current Passport Number</label>
+            <input
+              type="text"
+              [(ngModel)]="formData.passportNumber"
+              name="passportNumber"
+              placeholder="A12345678"
+              required
+              pattern="[A-Z0-9]+"
+            />
+            @if (validationErrors.passportNumber) {
+              <small class="error">{{ validationErrors.passportNumber }}</small>
+            }
+          </div>
+
+          <div class="form-group">
+            <label>Email Address</label>
+            <input
+              type="email"
+              [(ngModel)]="formData.email"
+              name="email"
+              placeholder="john.doe@example.com"
+              required
+            />
+            @if (validationErrors.email) {
+              <small class="error">{{ validationErrors.email }}</small>
+            }
+          </div>
+
+          <div class="form-group">
+            <label>Residential Address</label>
+            <textarea
+              [(ngModel)]="formData.address"
+              name="address"
+              rows="3"
+              placeholder="123 Main St, Springfield, IL 62701"
+            ></textarea>
+            @if (validationErrors.address) {
+              <small class="error">{{ validationErrors.address }}</small>
+            }
+          </div>
+
+          <div class="form-footer">
+            <button type="submit" class="next-button">
+              Next →
+            </button>
+          </div>
+        </div>
+      </form>
+    }
+
+    <!-- Step 2: Upload Documents -->
+    @if (currentStep === 2) {
+      <div class="passport-form-card">
+        <h3>Step 2: Enter Document Details</h3>
+        <div class="form-group">
+          <label>Recent Passport-Sized Photo Info</label>
+          <input
+            type="text"
+            [(ngModel)]="formData.photo"
+            name="photo"
+            placeholder="Enter photo description or URL"
+          />
+          @if (validationErrors.photo) {
+            <small class="error">{{ validationErrors.photo }}</small>
+          }
+        </div>
+        <div class="form-group">
+          <label>Government Issued ID Info</label>
+          <input
+            type="text"
+            [(ngModel)]="formData.govID"
+            name="govID"
+            placeholder="Enter government ID description or number"
+          />
+          @if (validationErrors.govID) {
+            <small class="error">{{ validationErrors.govID }}</small>
+          }
+        </div>
+        <div class="form-footer">
+          <button type="button" class="next-button" (click)="prevStep()">
+            ← Back
+          </button>
+          <button type="button" class="next-button" (click)="nextStep()">
+            Next →
+          </button>
+        </div>
+      </div>
+    }
+
+    <!-- Step 3: Review & Payment -->
+    @if (currentStep === 3) {
+      <div class="passport-form-card">
+        <h3>Step 3: Review Details & Proceed to Payment</h3>
+        <p>Please confirm that your personal details and documents are correct.</p>
+        <ul class="review-list">
+          <li><strong>Name:</strong> {{ formData.fullName }}</li>
+          <li><strong>DOB:</strong> {{ formData.dob }}</li>
+          <li><strong>Email:</strong> {{ formData.email }}</li>
+          <li><strong>Passport Number:</strong> {{ formData.passportNumber }}</li>
+        </ul>
+        <p class="payment-info">Total Fee: <strong>$140.00 USD</strong></p>
+        <div class="form-footer">
+          <button type="button" class="next-button" (click)="prevStep()">
+            ← Back
+          </button>
+          <button type="button" class="next-button" (click)="submitApplication()">
+            Submit
+          </button>
+        </div>
+      </div>
+    }
+
+    <!-- Step 4: Confirmation -->
+    @if (currentStep === 4) {
+      <div class="passport-form-card confirmation">
+        <h3>Step 4: Confirmation</h3>
+        <p>Thank you for submitting your passport renewal application.</p>
+        <p>You will receive an email confirmation shortly.</p>
+        <button type="button" class="next-button" (click)="currentStep = 1">
+          Start New Application
+        </button>
+      </div>
+    }
+
+    <!-- Guidelines & Help Section -->
+    <div class="passport-guidelines">
+      <div class="guideline-card">
+        <h4>Application Guidelines</h4>
+        <ul>
+          <li><i class="icon">ℹ️</i> Fill all fields with accurate data matching your passport.</li>
+          <li><i class="icon">📷</i> Recent photo must meet official size/format guidelines.</li>
+          <li><i class="icon">📄</i> Upload clear, valid government-issued IDs only.</li>
+          <li><i class="icon">💳</i> Payment is non-refundable once submitted.</li>
+        </ul>
+      </div>
+
+      <div class="help-card">
+        <h4>Need Assistance?</h4>
+        <div class="help-option">💬 Chat with a Passport Officer</div>
+        <div class="help-option">📞 24x7 Support: 1-800-PASSPORT</div>
+        <div class="help-option">❓ View Frequently Asked Questions</div>
+      </div>
+    </div>
+  </div>
+</div>

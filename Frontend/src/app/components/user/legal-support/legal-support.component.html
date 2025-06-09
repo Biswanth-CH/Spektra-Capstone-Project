@@ -1,0 +1,126 @@
+<app-navbar></app-navbar>
+
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Legal Inquiry</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li (click)="navigateTo('user-dashboard')">Dashboard</li>
+        <li (click)="navigateTo('passport-renewal')">Passport Renewal</li>
+        <li (click)="navigateTo('tax-filing')">Tax Filing</li>
+        <li (click)="navigateTo('legal-inquiry')" class="active">Legal Inquiry</li>
+        <li (click)="navigateTo('ai-assistant')">AI Assistant</li>
+        <li (click)="navigateTo('user-requests')">Requests</li>
+        <li (click)="navigateTo('user-reports')">Reports</li>
+        <li (click)="navigateTo('user-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="dashboard-container">
+    <h2>Legal Inquiry</h2>
+    <p>Get expert legal assistance for your concerns</p>
+
+    <div class="legal-inquiry-grid">
+      <!-- Left: Form -->
+      <div class="legal-form-card">
+        <h3>Submit Your Inquiry</h3>
+        <form (ngSubmit)="submitInquiry()" #inquiryForm="ngForm">
+          <div class="form-row">
+            <select name="category" [(ngModel)]="category" required>
+              <option value="" disabled selected>Select Category</option>
+              <option value="Civil Law">Civil Law</option>
+              <option value="Criminal Law">Criminal Law</option>
+              <option value="Family Law">Family Law</option>
+              <option value="Property Law">Property Law</option>
+            </select>
+
+            <select name="priority" [(ngModel)]="priority" required>
+              <option value="" disabled selected>Priority</option>
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+              <option value="Urgent">Urgent</option>
+            </select>
+          </div>
+
+          <input
+            type="text"
+            name="subject"
+            [(ngModel)]="subject"
+            placeholder="Subject"
+            required
+          />
+
+          <textarea
+            name="description"
+            [(ngModel)]="description"
+            placeholder="Brief description of your legal matter"
+            required
+          ></textarea>
+
+          <textarea
+            name="information"
+            [(ngModel)]="information"
+            placeholder="Provide detailed information about your legal concern"
+            rows="5"
+            required
+          ></textarea>
+
+          <div class="form-group">
+            <label>Upload the Document</label>
+            <input
+              type="text"
+              name="document"
+              [(ngModel)]="document"
+              placeholder="Enter document URL or description"
+            />
+          </div>
+
+          <div class="checkbox-row">
+            <input
+              type="checkbox"
+              id="terms"
+              name="agreeTerms"
+              [(ngModel)]="agreeTerms"
+              required
+            />
+            <label for="terms">
+              I agree to the terms and conditions and consent to share my information for legal consultation purposes.
+            </label>
+          </div>
+
+          <div class="form-footer">
+            <button type="submit" class="submit-button" [disabled]="!inquiryForm.valid">
+              Submit Inquiry
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Right: Legal Services Info -->
+      <div class="legal-support-card">
+        <div class="services-card">
+          <h4>Legal Services</h4>
+          <ul>
+            <li><strong>Civil Law</strong> – Contracts, property disputes, civil rights</li>
+            <li><strong>Criminal Law</strong> – Defense, appeals, legal rights</li>
+            <li><strong>Family Law</strong> – Divorce, custody, adoption</li>
+            <li><strong>Property Law</strong> – Real estate, tenant rights, zoning</li>
+          </ul>
+        </div>
+
+        <div class="help-card">
+          <h4>Contact Legal Support</h4>
+          <div class="help-option">💬 Chat with Legal Expert</div>
+          <div class="help-option">📞 Legal Hotline: 1-800-LAW-HELP</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

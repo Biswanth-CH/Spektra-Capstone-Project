@@ -1,0 +1,80 @@
+<app-navbar></app-navbar>
+<div class="request-table-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Requests</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li (click)="navigateTo('user-dashboard')">Dashboard</li>
+        <li (click)="navigateTo('passport-renewal')">Passport Renewal</li>
+        <li (click)="navigateTo('tax-filing')">Tax Filing</li>
+        <li (click)="navigateTo('legal-inquiry')">Legal Inquiry</li>
+        <li (click)="navigateTo('ai-assistant')">AI Assistant</li>
+        <li class="active" (click)="navigateTo('user-requests')">Requests</li>
+        <li (click)="navigateTo('user-reports')">Reports</li>
+        <li (click)="navigateTo('user-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+  
+  <div class="adjust" style="margin-top: 80px; margin-left: 290px;">
+    <!-- Filters -->
+    <div class="filters" style="margin-bottom: 20px;">
+      <label>
+        Status:
+        <select [(ngModel)]="selectedStatus" (change)="applyFilters()">
+          <option value="">All</option>
+          <option value="Approved">Approved</option>
+          <option value="Pending">Pending</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+      </label>
+
+      <label style="margin-left: 20px;">
+        Request Type:
+        <select [(ngModel)]="selectedRequestType" (change)="applyFilters()">
+          <option value="">All</option>
+          <option value="LegalInquiry">LegalInquiry</option>
+          <option value="PassportRenewal">PassportRenewal</option>
+          <option value="TaxFiling">TaxFiling</option>
+        </select>
+      </label>
+    </div>
+
+    <!-- Requests Table -->
+    <div class="user-table">
+      <div class="user-row header">
+        <span>Request ID</span>
+        <span>Request Type</span>
+        <span>Date</span>
+        <span>Status</span>
+      </div>
+
+      @for (request of filteredRequests; track request.userRequestId) {
+        <div class="user-row">
+          <span>{{ request.userRequestId }}</span>
+          <span>{{ request.requestType }}</span>
+          <span>{{ request.createdAt | date }}</span>
+          <span>
+            <span
+              class="badge"
+              [class.active]="request.status === 'Approved'"
+              [class.inactive]="request.status === 'Pending' || request.status === 'Rejected'"
+            >
+              {{ request.status }}
+            </span>
+          </span>
+        </div>
+      }
+      
+      @if (filteredRequests.length === 0) {
+        <div class="user-row">
+          <span colspan="4">No requests found.</span>
+        </div>
+      }
+    </div>
+  </div>
+</div>

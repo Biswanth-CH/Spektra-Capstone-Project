@@ -1,0 +1,84 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Dashboard</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="active" (click)="navigateTo('admin-dashboard')">
+          Dashboard
+        </li>
+        <li (click)="navigateTo('admin-users')">Users</li>
+        <li (click)="navigateTo('admin-analytics')">Analytics</li>
+        <li (click)="navigateTo('admin-requests')">Requests</li>
+        <li (click)="navigateTo('admin-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Admin Content -->
+  <div class="dashboard-container">
+    <div class="header">
+      <h2>Welcome, {{ adminName }}</h2>
+    </div>
+
+    <div class="admin-summary">
+      <h3>Admin Control Center</h3>
+      <p class="admin-description">Welcome to your administrative control center. Access key management sections by clicking on the cards below.</p>
+      
+      <div class="feature-cards">
+        <div class="feature-card" (click)="navigateTo('admin-users')">
+          <h4>Users</h4>
+          <div class="feature-content">
+            <p>• View complete user details</p>
+            <p>• Access User ID, Name, Email, Phone</p>
+            <p>• Search and filter users</p>
+          </div>
+          <div class="card-footer">
+            <span>Click to manage users →</span>
+          </div>
+        </div>
+        
+        <div class="feature-card" (click)="navigateTo('admin-requests')">
+          <h4>Requests</h4>
+          <div class="feature-content">
+            <p>• View Request ID & Service Details</p>
+            <p>• Filter by User ID, Status & Type</p>
+            <p>• Approve/Reject Requests</p>
+          </div>
+          <div class="card-footer">
+            <span>Click to manage requests →</span>
+          </div>
+        </div>
+        
+        <div class="feature-card" (click)="navigateTo('admin-analytics')">
+          <h4>Analytics</h4>
+          <div class="feature-content">
+            <p>• Track Passport Request Stats</p>
+            <p>• Monitor Tax Filing Numbers</p>
+            <p>• View Legal Inquiry Metrics</p>
+          </div>
+          <div class="card-footer">
+            <span>Click to view analytics →</span>
+          </div>
+        </div>
+        
+        <div class="feature-card" (click)="navigateTo('admin-profile')">
+          <h4>Profile</h4>
+          <div class="feature-content">
+            <p>• View Profile Picture</p>
+            <p>• View Personal Info (Name, Email, Phone)</p>
+            <p>• View Department & Role</p>
+          </div>
+          <div class="card-footer">
+            <span>Click to view profile →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

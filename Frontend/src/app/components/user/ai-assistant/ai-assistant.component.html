@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Legal Inquiry</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li (click)="navigateTo('user-dashboard')">Dashboard</li>
+        <li (click)="navigateTo('passport-renewal')">Passport Renewal</li>
+        <li (click)="navigateTo('tax-filing')">Tax Filing</li>
+        <li (click)="navigateTo('legal-inquiry')">Legal Inquiry</li>
+        <li class="active" (click)="navigateTo('ai-assistant')">
+          AI Assistant
+        </li>
+        <li (click)="navigateTo('user-requests')">Requests</li>
+        <li (click)="navigateTo('user-reports')">Reports</li>
+        <li (click)="navigateTo('user-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- AI Assistant content -->
+  <div class="dashboard-container"> 
+    <app-chat></app-chat>
+  </div>
+</div>

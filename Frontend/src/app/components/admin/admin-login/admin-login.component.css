@@ -1,0 +1,14 @@
+.cartoon {
+  margin-bottom: 1.5rem;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.cartoon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

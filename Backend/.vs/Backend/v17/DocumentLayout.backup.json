@@ -1,0 +1,537 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\New Project\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\controllers\\passportprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\passportprofilecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\dtos\\adminlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\dtos\\adminlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\models\\userprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\dtos\\passportrenewaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\dtos\\passportrenewaldto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\models\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\models\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\services\\jwtsevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\services\\jwtsevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\models\\adminprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\models\\adminprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\dtos\\adminprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\dtos\\adminprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\models\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\models\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\dtos\\legalinquirydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\dtos\\legalinquirydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\dtos\\taxfilingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\dtos\\taxfilingdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\dtos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\dtos\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\controllers\\userrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\userrequestcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\controllers\\legalenquirycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\legalenquirycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\controllers\\taxfillingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\taxfillingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\dtos\\userprofiledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\dtos\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\dtos\\userrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\models\\legalinquiry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\models\\legalinquiry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\models\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\models\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\models\\adminlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\dtos\\servicerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\dtos\\servicerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\models\\passportrenewal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\models\\passportrenewal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\models\\taxfiling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\models\\taxfiling.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\migrations\\appdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|d:\\new project\\backend\\backend\\migrations\\20250527123239_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{17A55D91-3D04-4294-B65D-1997A8413158}|Backend\\Backend.csproj|solutionrelative:backend\\migrations\\20250527123239_initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PassportRenewalDto.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\DTOs\\PassportRenewalDto.cs",
+              "RelativeDocumentMoniker": "Backend\\DTOs\\PassportRenewalDto.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\DTOs\\PassportRenewalDto.cs",
+              "RelativeToolTip": "Backend\\DTOs\\PassportRenewalDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T07:51:04.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserRequest.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Models\\UserRequest.cs",
+              "RelativeDocumentMoniker": "Backend\\Models\\UserRequest.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Models\\UserRequest.cs",
+              "RelativeToolTip": "Backend\\Models\\UserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:17:15.577Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "JwtSevice.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Services\\JwtSevice.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\JwtSevice.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Services\\JwtSevice.cs",
+              "RelativeToolTip": "Backend\\Services\\JwtSevice.cs",
+              "ViewState": "AgIAADgAAAAASGO9NT7Xv0UAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T17:41:50.646Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAGUAAAAAAAAAAAAswGwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-28T05:50:25.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserProfile.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Models\\UserProfile.cs",
+              "RelativeDocumentMoniker": "Backend\\Models\\UserProfile.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Models\\UserProfile.cs",
+              "RelativeToolTip": "Backend\\Models\\UserProfile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:17:10.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminLoginDto.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\DTOs\\AdminLoginDto.cs",
+              "RelativeDocumentMoniker": "Backend\\DTOs\\AdminLoginDto.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\DTOs\\AdminLoginDto.cs",
+              "RelativeToolTip": "Backend\\DTOs\\AdminLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:01:53.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PassportProfileController.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Controllers\\PassportProfileController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\PassportProfileController.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Controllers\\PassportProfileController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\PassportProfileController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAYwCsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T21:47:27.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AdminProfile.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Models\\AdminProfile.cs",
+              "RelativeDocumentMoniker": "Backend\\Models\\AdminProfile.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Models\\AdminProfile.cs",
+              "RelativeToolTip": "Backend\\Models\\AdminProfile.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:15:43.783Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AdminProfileDto.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\DTOs\\AdminProfileDto.cs",
+              "RelativeDocumentMoniker": "Backend\\DTOs\\AdminProfileDto.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\DTOs\\AdminProfileDto.cs",
+              "RelativeToolTip": "Backend\\DTOs\\AdminProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:02:21.517Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T21:12:05.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ServiceRequest.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Models\\ServiceRequest.cs",
+              "RelativeDocumentMoniker": "Backend\\Models\\ServiceRequest.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Models\\ServiceRequest.cs",
+              "RelativeToolTip": "Backend\\Models\\ServiceRequest.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAUwA4AAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:16:41.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "Backend\\appsettings.json",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\appsettings.json",
+              "RelativeToolTip": "Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-27T12:14:39.211Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LegalInquiryDto.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\DTOs\\LegalInquiryDto.cs",
+              "RelativeDocumentMoniker": "Backend\\DTOs\\LegalInquiryDto.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\DTOs\\LegalInquiryDto.cs",
+              "RelativeToolTip": "Backend\\DTOs\\LegalInquiryDto.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAwwBEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:02:59.038Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TaxFilingDto.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\DTOs\\TaxFilingDto.cs",
+              "RelativeDocumentMoniker": "Backend\\DTOs\\TaxFilingDto.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\DTOs\\TaxFilingDto.cs",
+              "RelativeToolTip": "Backend\\DTOs\\TaxFilingDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAYwAsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:04:06.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\DTOs\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "Backend\\DTOs\\AppDbContext.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\DTOs\\AppDbContext.cs",
+              "RelativeToolTip": "Backend\\DTOs\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:40:31.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserProfileDto.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\DTOs\\UserProfileDto.cs",
+              "RelativeDocumentMoniker": "Backend\\DTOs\\UserProfileDto.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\DTOs\\UserProfileDto.cs",
+              "RelativeToolTip": "Backend\\DTOs\\UserProfileDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:04:43.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "UserRequestController.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Controllers\\UserRequestController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\UserRequestController.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Controllers\\UserRequestController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\UserRequestController.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAYwCsAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T08:59:31.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LegalenquiryController.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Controllers\\LegalenquiryController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\LegalenquiryController.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Controllers\\LegalenquiryController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\LegalenquiryController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAowDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T22:00:27.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TaxfillingController.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Controllers\\TaxfillingController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\TaxfillingController.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Controllers\\TaxfillingController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\TaxfillingController.cs",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAlwBUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T21:54:24.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UserRequestDto.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\DTOs\\UserRequestDto.cs",
+              "RelativeDocumentMoniker": "Backend\\DTOs\\UserRequestDto.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\DTOs\\UserRequestDto.cs",
+              "RelativeToolTip": "Backend\\DTOs\\UserRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:05:02.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "LegalInquiry.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Models\\LegalInquiry.cs",
+              "RelativeDocumentMoniker": "Backend\\Models\\LegalInquiry.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Models\\LegalInquiry.cs",
+              "RelativeToolTip": "Backend\\Models\\LegalInquiry.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:16:17.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Backend\\Program.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Program.cs",
+              "RelativeToolTip": "Backend\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAiwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:14:36.04Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Backend\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Backend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-27T12:21:36.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Models\\UserLogin.cs",
+              "RelativeDocumentMoniker": "Backend\\Models\\UserLogin.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Models\\UserLogin.cs",
+              "RelativeToolTip": "Backend\\Models\\UserLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:16:54.068Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UserLoginDto.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\DTOs\\UserLoginDto.cs",
+              "RelativeDocumentMoniker": "Backend\\DTOs\\UserLoginDto.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\DTOs\\UserLoginDto.cs",
+              "RelativeToolTip": "Backend\\DTOs\\UserLoginDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:04:26.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AdminLogin.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Models\\AdminLogin.cs",
+              "RelativeDocumentMoniker": "Backend\\Models\\AdminLogin.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Models\\AdminLogin.cs",
+              "RelativeToolTip": "Backend\\Models\\AdminLogin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:12:28.396Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ServiceRequestDto.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\DTOs\\ServiceRequestDto.cs",
+              "RelativeDocumentMoniker": "Backend\\DTOs\\ServiceRequestDto.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\DTOs\\ServiceRequestDto.cs",
+              "RelativeToolTip": "Backend\\DTOs\\ServiceRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:03:46.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "PassportRenewal.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Models\\PassportRenewal.cs",
+              "RelativeDocumentMoniker": "Backend\\Models\\PassportRenewal.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Models\\PassportRenewal.cs",
+              "RelativeToolTip": "Backend\\Models\\PassportRenewal.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwB8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:16:34.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TaxFiling.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Models\\TaxFiling.cs",
+              "RelativeDocumentMoniker": "Backend\\Models\\TaxFiling.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Models\\TaxFiling.cs",
+              "RelativeToolTip": "Backend\\Models\\TaxFiling.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAkwCEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:13:15.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Backend.csproj",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Backend.csproj",
+              "RelativeDocumentMoniker": "Backend\\Backend.csproj",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Backend.csproj",
+              "RelativeToolTip": "Backend\\Backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-27T19:20:07.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AppDbContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Backend\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Migrations\\AppDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Backend\\Migrations\\AppDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T19:38:43.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20250527123239_Initial.cs",
+              "DocumentMoniker": "D:\\New Project\\Backend\\Backend\\Migrations\\20250527123239_Initial.cs",
+              "RelativeDocumentMoniker": "Backend\\Migrations\\20250527123239_Initial.cs",
+              "ToolTip": "D:\\New Project\\Backend\\Backend\\Migrations\\20250527123239_Initial.cs",
+              "RelativeToolTip": "Backend\\Migrations\\20250527123239_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBQAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-27T12:32:39.418Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

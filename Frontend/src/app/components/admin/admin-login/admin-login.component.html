@@ -1,0 +1,72 @@
+<div
+  class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center"
+  style="background: linear-gradient(135deg, #2c3d4d, #2c3e50)"
+>
+  <div class="w-100" style="max-width: 420px">
+    <div class="login-container bg-white p-4 rounded shadow">
+      <div class="mb-3 text-end">
+        <button
+          class="btn btn-outline-primary btn-sm"
+          type="button"
+          (click)="goToHome()"
+        >
+          &larr; Back to Home
+        </button>
+      </div>
+
+      <h2 class="text-center mb-4 text-primary fw-semibold">Admin Login</h2>
+
+      @if (loginError) {
+        <div class="alert alert-danger">
+          {{ loginError }}
+        </div>
+      }
+
+      <div class="cartoon text-center mb-4">
+        @if (!password || password.length === 0) {
+          <img src="https://i.ibb.co/98gpLCQ/l1.png" alt="Animation 1" />
+        } @else if (password.length > 0 && password.length < 200) {
+          <img src="https://i.ibb.co/Vq5j4Vg/l2.png" alt="Animation 2" />
+        } @else {
+          <img src="https://i.ibb.co/Y0jsj90/l3.png" alt="Animation 3" />
+        }
+      </div>
+
+      <form (ngSubmit)="onSubmit()" novalidate>
+        <div class="mb-3">
+          <label for="email" class="form-label fw-semibold">Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            [(ngModel)]="email"
+            name="email"
+            required
+            pattern="^[^\\s@]+@[^\\s@]+\\.[^\\s@]+$"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="form-label fw-semibold">Password:</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            [(ngModel)]="password"
+            name="password"
+            required
+            minlength="6"
+            maxlength="200"
+          />
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary w-100 fw-semibold login-btn"
+        >
+          Login
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

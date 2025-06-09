@@ -1,0 +1,94 @@
+<app-navbar></app-navbar>
+
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>User Dashboard</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li class="active" (click)="navigateTo('user-dashboard')">Dashboard</li>
+        <li (click)="navigateTo('passport-renewal')">Passport Renewal</li>
+        <li (click)="navigateTo('tax-filing')">Tax Filing</li>
+        <li (click)="navigateTo('legal-inquiry')">Legal Inquiry</li>
+        <li (click)="navigateTo('ai-assistant')">AI Assistant</li>
+        <li (click)="navigateTo('user-requests')">Requests</li>
+        <li (click)="navigateTo('user-reports')">Reports</li>
+        <li (click)="navigateTo('user-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Dashboard Content -->
+  <div class="dashboard-container">
+    <div class="header">
+      <h2>Welcome, {{ userName }}</h2>
+    </div>
+
+    <div class="user-summary">
+      <h3>Service Center</h3>
+      <p class="user-description">Access our government services and track your applications from one place.</p>
+      
+      <div class="feature-cards">
+        <div class="feature-card" (click)="navigateTo('passport-renewal')">
+          <h4>Government Services</h4>
+          <div class="feature-content">
+            <div class="service-item">
+              <p class="service-title">• Passport Services</p>
+              <p class="service-desc">Renew passport, track status</p>
+            </div>
+            <div class="service-item">
+              <p class="service-title">• Tax Filing</p>
+              <p class="service-desc">Submit returns, view history</p>
+            </div>
+            <div class="service-item">
+              <p class="service-title">• Legal Support</p>
+              <p class="service-desc">Get consultations, document review</p>
+            </div>
+          </div>
+          <div class="card-footer">
+            <span>Access services →</span>
+          </div>
+        </div>
+        
+        <div class="feature-card" (click)="navigateTo('ai-assistant')">
+          <h4>AI Assistant</h4>
+          <div class="feature-content">
+            <p>• 24/7 Support Available</p>
+            <p>• Multi-language Support</p>
+            <p>• Quick Query Resolution</p>
+          </div>
+          <div class="card-footer">
+            <span>Chat with assistant →</span>
+          </div>
+        </div>
+        
+        <div class="feature-card" (click)="navigateTo('user-requests')">
+          <h4>My Requests</h4>
+          <div class="feature-content">
+            <p>• View All Applications</p>
+            <p>• Track Request Status</p>
+            <p>• Check Application Updates</p>
+          </div>
+          <div class="card-footer">
+            <span>View your requests →</span>
+          </div>
+        </div>
+        
+        <div class="feature-card" (click)="navigateTo('user-reports')">
+          <h4>Reports</h4>
+          <div class="feature-content">
+            <p>• Service History</p>
+            <p>• Application Reports</p>
+            <p>• Status Summary</p>
+          </div>
+          <div class="card-footer">
+            <span>Access reports →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

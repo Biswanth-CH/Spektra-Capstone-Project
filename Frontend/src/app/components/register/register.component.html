@@ -1,0 +1,108 @@
+<div
+  class="container-fluid vh-100 d-flex flex-column justify-content-center align-items-center"
+  style="background: linear-gradient(135deg, #2c3d4d, #2c3e50)"
+>
+  <div class="w-100" style="max-width: 500px">
+    <div class="register-container bg-white p-4 rounded shadow">
+      <div class="mb-3 text-end">
+        <button
+          class="btn btn-outline-primary btn-sm"
+          (click)="goToHome()"
+          type="button"
+        >
+          &larr; Back to Home
+        </button>
+      </div>
+
+      <h2 class="text-center mb-4 text-primary fw-semibold">
+        User Registration
+      </h2>
+
+      @if (registerError) {
+      <div class="alert alert-success">
+        {{ registerError }}
+      </div>
+      }
+
+      <form (ngSubmit)="onRegister()" #registerForm="ngForm">
+        <div class="mb-3">
+          <label for="profilePic" class="form-label fw-semibold"
+            >Profile Picture URL:</label
+          >
+          <input
+            type="url"
+            id="profilePic"
+            class="form-control"
+            [(ngModel)]="userProfile.profilePic"
+            name="profilePic"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="fullName" class="form-label fw-semibold"
+            >Full Name:</label
+          >
+          <input
+            type="text"
+            id="fullName"
+            class="form-control"
+            [(ngModel)]="userProfile.fullName"
+            name="fullName"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label fw-semibold">Email:</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            [(ngModel)]="userProfile.email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label fw-semibold">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            class="form-control"
+            [(ngModel)]="userProfile.phone"
+            name="phone"
+            pattern="^[0-9]{10}$"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="password" class="form-label fw-semibold">Password:</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            [(ngModel)]="userProfile.password"
+            name="password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100 fw-semibold">
+          Register
+        </button>
+
+        <div class="text-center mt-3">
+          <span class="text-muted">Already have an account?</span>
+          <a
+            (click)="goToLogin()"
+            class="fw-semibold text-primary text-decoration-none ms-1 clickable"
+            >Login</a
+          >
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

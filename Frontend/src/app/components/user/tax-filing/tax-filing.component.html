@@ -1,0 +1,282 @@
+<app-navbar></app-navbar>
+<div class="dashboard-layout">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Tax Filing</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li (click)="navigateTo('user-dashboard')">Dashboard</li>
+        <li (click)="navigateTo('passport-renewal')">Passport Renewal</li>
+        <li class="active" (click)="navigateTo('tax-filing')">Tax Filing</li>
+        <li (click)="navigateTo('legal-inquiry')">Legal Inquiry</li>
+        <li (click)="navigateTo('ai-assistant')">AI Assistant</li>
+        <li (click)="navigateTo('user-requests')">Requests</li>
+        <li (click)="navigateTo('user-reports')">Reports</li>
+        <li (click)="navigateTo('user-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+  <div class="dashboard-container">
+    <h2>Tax Filing</h2>
+    <p>File your taxes easily and securely</p>
+    <div class="stepper">
+      <div class="step" [class.active]="currentStep === 1">
+        1 <span>Personal Info</span>
+      </div>
+      <div class="step" [class.active]="currentStep === 2">
+        2 <span>Income</span>
+      </div>
+      <div class="step" [class.active]="currentStep === 3">
+        3 <span>Deductions</span>
+      </div>
+      <div class="step" [class.active]="currentStep === 4">
+        4 <span>Review & Submit</span>
+      </div>
+    </div>
+    <div class="tax-layout">
+      <div class="tax-form-card">
+        @if (currentStep === 1) {
+        <form>
+          <h3>Step 1: Personal Information</h3>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                placeholder="First Name"
+                [(ngModel)]="taxFilingForm.firstName"
+                name="firstName"
+                required
+                style="margin-right: 125px;"
+              />
+              @if (formErrors['firstName']) {
+              <div class="error-message">{{ formErrors["firstName"] }}</div>
+              }
+            </div>
+            <div class="form-field">
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Last Name"
+                [(ngModel)]="taxFilingForm.lastName"
+                name="lastName"
+                required
+                style="margin-right: 20px;"
+              />
+              @if (formErrors['lastName']) {
+              <div class="error-message">{{ formErrors["lastName"] }}</div>
+              }
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="ssn">Social Security Number (SSN)</label>
+              <input
+                type="text"
+                id="ssn"
+                placeholder="SSN"
+                [(ngModel)]="taxFilingForm.ssn"
+                name="ssn"
+                required
+              />
+              @if (formErrors['ssn']) {
+              <div class="error-message">{{ formErrors["ssn"] }}</div>
+              }
+            </div>
+            <div class="form-field">
+              <label for="filingStatus">Filing Status</label>
+              <select
+                id="filingStatus"
+                [(ngModel)]="taxFilingForm.filingStatus"
+                name="filingStatus"
+                required
+              >
+                <option disabled selected>Select Filing Status</option>
+                <option>Single</option>
+                <option>Married Filing Jointly</option>
+                <option>Married Filing Separately</option>
+                <option>Head of Household</option>
+              </select>
+              @if (formErrors['filingStatus']) {
+              <div class="error-message">{{ formErrors["filingStatus"] }}</div>
+              }
+            </div>
+          </div>
+          <div class="form-footer">
+            <button type="button" class="next-button" (click)="nextStep()">
+              Next →
+            </button>
+          </div>
+        </form>
+        } @if (currentStep === 2) {
+        <form>
+          <h3>Step 2: Income Details</h3>
+          <div class="form-group">
+            <div class="form-field">
+              <label>W-2 Income ($)</label>
+              <input
+                type="number"
+                [(ngModel)]="taxFilingForm.w2Income"
+                name="w2Income"
+                placeholder="e.g. 55000"
+                required
+                min="0"
+              />
+              @if (formErrors['w2Income']) {
+              <div class="error-message">{{ formErrors["w2Income"] }}</div>
+              }
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-field">
+              <label>Freelance/1099 Income ($)</label>
+              <input
+                type="number"
+                [(ngModel)]="taxFilingForm.freelance1099Income"
+                name="freelanceIncome"
+                placeholder="e.g. 12000"
+                required
+                min="0"
+              />
+              @if (formErrors['freelance1099Income']) {
+              <div class="error-message">
+                {{ formErrors["freelance1099Income"] }}
+              </div>
+              }
+            </div>
+          </div>
+          <div class="form-footer">
+            <button type="button" class="next-button" (click)="prevStep()">
+              ← Back
+            </button>
+            <button type="button" class="next-button" (click)="nextStep()">
+              Next →
+            </button>
+          </div>
+        </form>
+        } @if (currentStep === 3) {
+        <form>
+          <h3>Step 3: Deductions</h3>
+          <div class="form-group">
+            <div class="form-field">
+              <label>Standard Deduction</label>
+              <select
+                [(ngModel)]="taxFilingForm.standardDeduction"
+                name="standardDeduction"
+                required
+              >
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+              @if (formErrors['standardDeduction']) {
+              <div class="error-message">
+                {{ formErrors["standardDeduction"] }}
+              </div>
+              }
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-field">
+              <label>Charitable Donations ($)</label>
+              <input
+                type="number"
+                [(ngModel)]="taxFilingForm.charitableDonations"
+                name="charitableDonations"
+                placeholder="e.g. 500"
+                required
+                min="0"
+              />
+              @if (formErrors['charitableDonations']) {
+              <div class="error-message">
+                {{ formErrors["charitableDonations"] }}
+              </div>
+              }
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-field">
+              <label>Mortgage Interest Paid ($)</label>
+              <input
+                type="number"
+                [(ngModel)]="taxFilingForm.mortgageInterestPaid"
+                name="mortgageInterest"
+                placeholder="e.g. 3500"
+                required
+                min="0"
+              />
+              @if (formErrors['mortgageInterestPaid']) {
+              <div class="error-message">
+                {{ formErrors["mortgageInterestPaid"] }}
+              </div>
+              }
+            </div>
+          </div>
+          <div class="form-footer">
+            <button type="button" class="next-button" (click)="prevStep()">
+              ← Back
+            </button>
+            <button type="button" class="next-button" (click)="nextStep()">
+              Next →
+            </button>
+          </div>
+        </form>
+        } @if (currentStep === 4) {
+        <div>
+          <h3>Step 4: Review & Submit</h3>
+          <p>Please review your entries before submitting.</p>
+          <ul class="review-list">
+            <li>
+              <strong>Name:</strong> {{ taxFilingForm.firstName }}
+              {{ taxFilingForm.lastName }}
+            </li>
+            <li><strong>SSN:</strong> {{ taxFilingForm.ssn }}</li>
+            <li><strong>W-2 Income:</strong> ${{ taxFilingForm.w2Income }}</li>
+            <li>
+              <strong>1099 Income:</strong> ${{
+                taxFilingForm.freelance1099Income
+              }}
+            </li>
+            <li>
+              <strong>Charity:</strong> ${{ taxFilingForm.charitableDonations }}
+            </li>
+            <li>
+              <strong>Mortgage Interest:</strong> ${{
+                taxFilingForm.mortgageInterestPaid
+              }}
+            </li>
+          </ul>
+          <div class="form-footer">
+            <button type="button" class="next-button" (click)="prevStep()">
+              ← Back
+            </button>
+            <button type="button" class="next-button" (click)="submitForm()">
+              Submit & Finish
+            </button>
+          </div>
+        </div>
+        }
+      </div>
+      <div class="tax-guidelines">
+        <div class="guideline-card">
+          <h4>Tax Filing Tips</h4>
+          <ul>
+            <li>🧾 Gather W-2s, 1099s, and other income docs.</li>
+            <li>✔️ Verify SSN and marital status details.</li>
+            <li>📑 Retain backup of all deductions.</li>
+            <li>⏳ File before the April deadline.</li>
+          </ul>
+        </div>
+        <div class="help-card">
+          <h4>Need Assistance?</h4>
+          <div>💬 Chat with a Tax Expert</div>
+          <div>📞 1-800-TAX-HELP</div>
+          <div>📘 IRS Filing Guide</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

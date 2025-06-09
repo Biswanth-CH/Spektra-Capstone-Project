@@ -1,0 +1,69 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Users</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li (click)="navigateTo('admin-dashboard')">Dashboard</li>
+        <li class="active" (click)="navigateTo('admin-users')">Users</li>
+        <li (click)="navigateTo('admin-analytics')">Analytics</li>
+        <li (click)="navigateTo('admin-requests')">Requests</li>
+        <li (click)="navigateTo('admin-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="dashboard-container">
+    <h2>Users Overview</h2>
+    <p>List of registered users and their associated service requests.</p>
+
+    <!-- User Table -->
+    <div class="user-table">
+      <div class="user-row header">
+        <span>User ID</span>
+        <span>Name</span>
+        <span>Email</span>
+        <span>Phone</span>
+      </div>
+
+      @for (user of users; track user.userId) {
+        <div class="user-row">
+          <span>{{ user.userId }}</span>
+          <span>{{ user.fullName }}</span>
+          <span>{{ user.email }}</span>
+          <span>{{ user.phone }}</span>
+        </div>
+
+        @if (user.requests && user.requests.length > 0) {
+          <div class="user-requests">
+            @for (request of user.requests; track request.userRequestId) {
+              <div class="request-row">
+                <span>→ Request #{{ request.userRequestId }} - {{ request.requestType }}</span>
+                <span>Status: 
+                  <span class="badge" 
+                        [class.active]="request.status === 'Approved'" 
+                        [class.inactive]="request.status === 'Pending' || request.status === 'Rejected'">
+                    {{ request.status }}
+                  </span>
+                </span>
+                <span>Created: {{ request.createdAt | date : "short" }}</span>
+              </div>
+            }
+          </div>
+        }
+      }
+
+      @if (users.length === 0) {
+        <div class="user-row">
+          <span colspan="4">No users found.</span>
+        </div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,67 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Admin Dashboard</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li (click)="navigateTo('admin-dashboard')">Dashboard</li>
+        <li (click)="navigateTo('admin-users')">Users</li>
+        <li (click)="navigateTo('admin-analytics')">Analytics</li>
+        <li class="active" (click)="navigateTo('admin-services')">Services</li>
+        <li (click)="navigateTo('admin-requests')">Requests</li>
+        <li (click)="navigateTo('admin-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="dashboard-container">
+    <h2>Service Management</h2>
+    <p>Administer services offered to users. Add, update, or remove services as needed.</p>
+
+    <!-- Service Table -->
+    <div class="user-table">
+      <div class="user-row header">
+        <span>Service ID</span>
+        <span>Service Name</span>
+        <span>Description</span>
+        <span>Status</span>
+        <span>Actions</span>
+      </div>
+
+      @for (service of services; track service.id) {
+        <div class="user-row">
+          <span>{{ service.id }}</span>
+          <span>{{ service.name }}</span>
+          <span>{{ service.description }}</span>
+          <span>
+            <span
+              class="badge"
+              [class.active]="service.status === 'Active'"
+              [class.inactive]="service.status === 'Inactive'"
+            >
+              {{ service.status }}
+            </span>
+          </span>
+          <span>
+            <div class="action-buttons">
+              <button class="action-btn" (click)="editService(service)">Edit</button>
+              <button class="action-btn delete" (click)="deleteService(service.id)">Delete</button>
+            </div>
+          </span>
+        </div>
+      }
+
+      @if (services.length === 0) {
+        <div class="user-row">
+          <span colspan="5">No services available.</span>
+        </div>
+      }
+    </div>
+  </div>
+</div>

@@ -1,0 +1,70 @@
+<app-admin-navbar></app-admin-navbar>
+
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <h3>Profile Section</h3>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li (click)="navigateTo('admin-dashboard')">Dashboard</li>
+        <li (click)="navigateTo('admin-users')">Users</li>
+        <li (click)="navigateTo('admin-analytics')">Analytics</li>
+        <li (click)="navigateTo('admin-requests')">Requests</li>
+        <li class="active" (click)="navigateTo('admin-profile')">Profile</li>
+        <li (click)="logout()">Logout</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="dashboard-container">
+    <h2>Admin Profile</h2>
+    <p>View and manage your profile details and security settings.</p>
+
+    <!-- Profile Info Card -->
+    <div class="profile-card">
+      <div class="profile-left">
+        <img
+          [src]="
+            profile.profilePic
+              ? profile.profilePic
+              : 'https://via.placeholder.com/100'
+          "
+          alt="admin avatar"
+          class="profile-img"
+        />
+        <h3>{{ profile.fullName }}</h3>
+        <p>{{ profile.role }}</p>
+        <p>{{ profile.department }}</p>
+      </div>
+
+      <div class="profile-right">
+        <div class="profile-section">
+          <h4>Profile Details</h4>
+          <div class="form-row">
+            <label>Full Name</label>
+            <input type="text" [value]="profile.fullName" disabled />
+          </div>
+          <div class="form-row">
+            <label>Email</label>
+            <input type="email" [value]="profile.email" disabled />
+          </div>
+          <div class="form-row">
+            <label>Phone</label>
+            <input type="text" [value]="profile.phone" disabled />
+          </div>
+          <div class="form-row">
+            <label>Department</label>
+            <input type="text" [value]="profile.department" disabled />
+          </div>
+          <div class="form-row">
+            <label>Role</label>
+            <input type="text" [value]="profile.role" disabled />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
